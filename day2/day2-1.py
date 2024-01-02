@@ -6,7 +6,7 @@ blue = 14
 
 working_games = []
 
-for line in open(sys.argv[1],'r').read().split('\n'):
+for line in open(sys.argv[1],'r').read().split('\n')[:-1]:
 	works = 1
 	game_split = line.split(':')
 	game_id = game_split[0][4:]
